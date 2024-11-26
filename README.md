@@ -1,2 +1,2 @@
-# Telerik-Academy-Projects
-This repo contains projects i did at Telerik Academy - Alpha program with Java
+# Telerik-Academy-CodingTasks
+This repo contains codingTasks i did at Telerik Academy - Alpha program with Java
