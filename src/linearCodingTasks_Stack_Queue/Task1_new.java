@@ -1,4 +1,4 @@
-package LinearCodingTasks_Stack_Queue;
+package linearCodingTasks_Stack_Queue;
 
 import java.util.Arrays;
 import java.util.Scanner;
