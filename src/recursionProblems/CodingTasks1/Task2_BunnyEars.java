@@ -1,4 +1,4 @@
-package recursionProblems;
+package recursionProblems.CodingTasks1;
 
 import java.util.Scanner;
 

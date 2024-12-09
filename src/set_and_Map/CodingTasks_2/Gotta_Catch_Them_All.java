@@ -8,7 +8,7 @@ public class Gotta_Catch_Them_All {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Map<String, TreeSet<Pokemon>> typesOfPokemon = new HashMap<>();
+        Map<String, Set<Pokemon>> typesOfPokemon = new HashMap<>();
         List<Pokemon> rankList = new ArrayList<>();
 
 
@@ -30,12 +30,9 @@ public class Gotta_Catch_Them_All {
                         typesOfPokemon.put(pokemonType, new TreeSet<>());
                     }
                     typesOfPokemon.get(pokemonType).add(newPokemon);
-                    if (pokemonPosition - 1 == rankList.size()) {
-                        rankList.add(newPokemon);
 
-                    } else {
-                        rankList.add(pokemonPosition - 1, newPokemon);
-                    }
+                    rankList.add(pokemonPosition - 1, newPokemon);
+
 
                     System.out.println("Added pokemon " + pokemonName + " to position " + pokemonPosition);
                     break;
@@ -65,20 +62,11 @@ public class Gotta_Catch_Them_All {
                         sb.append(i + 1).append(". ").append(rankList.get(i).toString());
                     }
 
-                    if (sb.length() > 2) {
-                        System.out.println(sb.substring(0, sb.length() - 2));
-                    } else {
-                        System.out.println("No items");
-                    }
+                    System.out.println(sb.substring(0, sb.length() - 2));
                     break;
                 }
-
             }
-
-
         }
-
-
     }
 }
 
@@ -118,7 +106,3 @@ class Pokemon implements Comparable<Pokemon> {
         return getName() + "(" + getPower() + "); ";
     }
 }
-
-
-
-

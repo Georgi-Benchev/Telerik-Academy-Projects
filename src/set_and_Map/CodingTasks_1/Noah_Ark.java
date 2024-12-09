@@ -1,4 +1,4 @@
-package set_and_Map_CodingTasks_1;
+package set_and_Map.CodingTasks_1;
 
 import java.util.Map;
 import java.util.Scanner;
